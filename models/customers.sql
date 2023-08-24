@@ -64,6 +64,7 @@ final as (
     left join customer_payments
         on  customers.customer_id = customer_payments.customer_id
 
+    where customers.first_name <> 'Jimmy'
 )
 
 select * from final
