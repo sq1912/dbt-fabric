@@ -9,5 +9,5 @@ jaffle_shop:
       host: tsxftjoipeqetcjxcjxpmi3cmu-gv2mggcd35mujamy6tx5dddq5e.datawarehouse.pbidedicated.windows.net
       schema: dbo
       type: fabric
-      threads: 4
+      threads: 1
       
