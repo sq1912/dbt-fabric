@@ -1,0 +1,13 @@
+# example profiles.yml file
+jaffle_shop:
+  target: dev
+  outputs:
+    dev:
+      authentication: CLI
+      database: dbt_jaffle_shop
+      driver: 'ODBC Driver 18 for SQL Server'
+      host: tsxftjoipeqetcjxcjxpmi3cmu-gv2mggcd35mujamy6tx5dddq5e.datawarehouse.pbidedicated.windows.net
+      schema: dbo
+      type: fabric
+      threads: 4
+      
