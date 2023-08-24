@@ -80,3 +80,21 @@ models:
         description: Amount of the order (AUD) paid for by gift card
         tests:
           - not_null
+
+  - name: top_10_customers
+    description: Top 10 Customers by Sales Amount
+
+exposures:
+  - name: top_customers_dashboard
+    label: Top Customers Power BI Dashboard
+    type: dashboard
+    maturity: high
+    description: >
+      Power BI Dashboard, das die top 10 Kunden für Sales auflistet!
+
+    depends_on:
+      - ref('top_10_customers')
+
+    owner:
+      name: Boaty McBoatface
+      email: boaty@acme.org
