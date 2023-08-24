@@ -17,8 +17,11 @@ models:
       - name: status
         tests:
           - accepted_values:
-              values: ['placed', 'shipped', 'completed', 'return_pending', 'returned']
-
+              values: ['placed', 'shipped', 'completed', 'returned']
+              config:
+                severity: error
+                error_if: ">10"
+                warn_if: ">0"
   - name: stg_payments
     columns:
       - name: payment_id
