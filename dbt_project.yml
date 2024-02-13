@@ -3,7 +3,7 @@ name: 'jaffle_shop'
 config-version: 2
 version: '0.1'
 
-profile: 'jaffle_shop'
+profile: 'ods'
 
 model-paths: ["models"]
 seed-paths: ["seeds"]
@@ -29,3 +29,6 @@ models:
         +tags: 
           - "unittest"
         +schema: unittest
+
+seeds:
+  +schema: seed

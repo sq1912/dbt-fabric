@@ -1,13 +1,15 @@
 # example profiles.yml file
-jaffle_shop:
+ods:
   target: dev
   outputs:
     dev:
-      authentication: CLI
-      database: dbt_jaffle_shop
+      type: sqlserver
       driver: 'ODBC Driver 18 for SQL Server'
-      host: tsxftjoipeqetcjxcjxpmi3cmu-gv2mggcd35mujamy6tx5dddq5e.datawarehouse.fabric.microsoft.com
+      server: localhost
+      port: 1433
+      database: cb_demo
       schema: dbo
-      type: fabric
-      threads: 1
-      
+      windows_login: False
+      trust_cert: True
+      user: dbt
+      password: "123"
