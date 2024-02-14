@@ -1,4 +1,4 @@
-name: 'jaffle_shop'
+name: cb_demo
 
 config-version: 2
 version: '0.1'
@@ -19,16 +19,18 @@ clean-targets:
 
 require-dbt-version: [">=1.0.0", "<2.0.0"]
 
-models:
-  jaffle_shop:
-      materialized: table
-      staging:
-        materialized: view
-      unittest:
-        materialized: table
-        +tags: 
-          - "unittest"
-        +schema: unittest
-
+   
 seeds:
   +schema: seed
+
+
+models:
+  cb_demo:
+    +as_columnstore: false
+
+    cleansing:
+      +schema: cleansing      
+
+    for_bi:
+      +schema: for_bi
+      +materialized: table

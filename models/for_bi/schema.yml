@@ -1,0 +1,12 @@
+exposures:
+  - name: payment_dashboard
+    label: Payment Power BI Dashboard
+    type: dashboard
+    maturity: high
+    description: |
+      Power BI Dashboard, for Customer Payments
+    depends_on:
+      - ref('payment_amount_per_customer')
+    owner:
+      name: Philipp Kurz
+      email: philipp.kurz@avanade.com

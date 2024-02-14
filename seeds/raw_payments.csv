@@ -40,12 +40,12 @@ id,order_id,payment_method,amount
 39,34,bank_transfer,1500
 40,35,credit_card,2900
 41,36,bank_transfer,900
-42,37,credit_card,2300
+42,,credit_card,2300
 43,38,credit_card,1500
 44,39,bank_transfer,800
 45,40,credit_card,1400
 46,41,credit_card,1700
-47,42,coupon,1700
+47,42,coupon,voucher code 6734320
 48,43,gift_card,1800
 49,44,gift_card,1100
 50,45,bank_transfer,500
