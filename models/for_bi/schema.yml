@@ -10,3 +10,15 @@ exposures:
     owner:
       name: Philipp Kurz
       email: philipp.kurz@avanade.com
+  
+  - name: order_dashboard
+    label: All Orders
+    type: dashboard
+    maturity: high
+    description: |
+      Power BI Dashboard, for Orders
+    depends_on:
+      - ref('orders')
+    owner:
+      name: Philipp Kurz
+      email: philipp.kurz@avanade.com
