@@ -1,0 +1,16 @@
+
+version: 2
+
+models:
+  - name: orders_clean
+    columns:
+      - name: order_id
+        tests:
+          - unique:
+              config:
+                severity: warn
+    tests:
+      - row_count_between:
+          min: 90
+          max: 400
+          severity: warn
