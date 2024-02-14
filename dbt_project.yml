@@ -34,3 +34,11 @@ models:
     for_bi:
       +schema: for_bi
       +materialized: table
+
+
+tests:
+  +store_failures: true  # all tests
+  +schema: z_dbt_test_failures # With this config-Option , we tell dbt to store results of failed tests
+                               # in a different schema. I want it to start with 'z', so the tables are
+                               # listed at the end of the alphabetical table-listing in SSMS
+
